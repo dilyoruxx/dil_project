@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    {% include 'header.html' %}
+
+<body>
+
+    {% for i in about %}
+    <h1>{{i.title}}</h1>
+    {{i.description}}
+    {% endfor %}
+
+    <br>
+    <!-- {{students}} -->
+    <!-- {% for name in students %}
+    {{name}}
+    {% endfor %} -->
+
+    <ul>
+        {% for name in students %}
+        <li>{{name}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
